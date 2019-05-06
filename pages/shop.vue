@@ -1,7 +1,6 @@
 <template>
   <div class="col-12">
-    <h1>Shop <span class="name">{{ name }}</span>.</h1>
-    <p><nuxt-link to="/" class="button--grey">Back home</nuxt-link></p>
+    <h1>Shop</h1>
     <div class="row">
       <card v-for="i in 6"/>
     </div>

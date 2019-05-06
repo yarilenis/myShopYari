@@ -1,65 +1,35 @@
 <template>
-  <div class="container">
-    <nuxt/>
+  <div>
+    <nav class="navbar navbar-light bg-light">
+      <nuxt-link to="/" class="">
+        <i class="fas fa-om"></i>
+        Yari
+      </nuxt-link>
+      <ul class="navbar-nav ml-auto flex-row">
+        <li class="nav-item px-2 active">
+          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="#">Tienda</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+        <li class="nav-item px-2">
+          <i class="fas fa-shopping-cart nav-cart"></i>
+          <div class="nav-cart__item">
+            <span class="nav-cart__item-number">1</span>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <nuxt/>
+    </div>
+    <div class="container">
+      <div class="footer">
+
+      </div>
+    </div>
   </div>
 </template>
-
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-  display: inline-flex;
-  align-self: center;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
-</style>
