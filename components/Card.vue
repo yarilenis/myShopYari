@@ -22,34 +22,20 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-  .card {
-    &__image{
-      width: 100%;
+<script>
+export default {
+  asyncData() {
+    return {
+      name: "Yari Yuri"
     }
-    &__img {
-      border-top-left-radius: 0.25rem;
-      border-top-right-radius: 0.25rem;
-      width: 100%;
-    }
-    &__description {
-      text-align: left;
-      padding: 10px
-    }
-  }
-  .btn-add-cart{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    .fa-circle{
-      font-size: 35px;
-    }
-    .fa-cart-plus{
-      position: absolute;
-      top: 30%;
-      color: white;
-      left: 30%;
-      font-size: 20px;
+  },
+  components: {
+    Card
+  },
+  methods: {
+    addProduct() {
+
     }
   }
-</style>
+}
+</script>

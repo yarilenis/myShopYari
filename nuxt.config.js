@@ -31,8 +31,7 @@ export default {
    ** Global CSS
    */
   css: [
-    'bootstrap/dist/css/bootstrap.css',
-    'scss/main.scss',
+    '@/scss/main.scss',
   ],
 
   /*
